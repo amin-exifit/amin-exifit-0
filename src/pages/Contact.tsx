@@ -74,7 +74,7 @@ const Contact: React.FC = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="pt-16 lg:pt-20 pb-4 relative" style={{ marginTop: '15px' }}>
-        <div className="blur-sheet rounded-3xl mx-4 sm:mx-6 lg:mx-8">
+        <div className="blur-sheet rounded-3xl mx-[30px]">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -97,7 +97,7 @@ const Contact: React.FC = () => {
 
       {/* Contact Content */}
       <section className="py-4" style={{ marginTop: '15px' }}>
-        <div className="blur-sheet rounded-3xl mx-4 sm:mx-6 lg:mx-8">
+        <div className="blur-sheet rounded-3xl mx-[30px]">
           <motion.div
             initial="hidden"
             animate="visible"

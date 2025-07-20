@@ -21,7 +21,7 @@ const TeamSection: React.FC = () => {
 
   return (
     <section className="py-4 relative" style={{ marginTop: '15px' }}>
-      <div className="mx-4 sm:mx-6 lg:mx-8">
+      <div className="mx-[30px]">
         <div className="blur-sheet rounded-3xl">
           <motion.div
             initial="hidden"

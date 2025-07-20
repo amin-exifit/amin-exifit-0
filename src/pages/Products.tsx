@@ -31,7 +31,7 @@ const Products: React.FC = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="pt-16 lg:pt-20 pb-4 relative" style={{ marginTop: '15px' }}>
-        <div className="blur-sheet rounded-3xl mx-4 sm:mx-6 lg:mx-8">
+        <div className="blur-sheet rounded-3xl mx-[30px]">
           <motion.div
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
@@ -54,7 +54,7 @@ const Products: React.FC = () => {
 
       {/* Products Grid */}
       <section className="py-4" style={{ marginTop: '15px' }}>
-        <div className="blur-sheet rounded-3xl mx-4 sm:mx-6 lg:mx-8">
+        <div className="blur-sheet rounded-3xl mx-[30px]">
           <motion.div
             initial="hidden"
             animate="visible"

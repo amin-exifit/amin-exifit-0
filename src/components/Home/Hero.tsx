@@ -22,7 +22,7 @@ const Hero: React.FC = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-4" style={{ marginTop: '15px' }}>
       {/* Hero Content */}
-      <div className="blur-sheet rounded-3xl mx-4 sm:mx-6 lg:mx-8 max-w-5xl w-full relative">
+      <div className="blur-sheet rounded-3xl mx-[30px] max-w-5xl w-full relative">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
