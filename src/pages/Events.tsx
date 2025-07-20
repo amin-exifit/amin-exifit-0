@@ -29,7 +29,7 @@ const Events: React.FC = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="py-16 lg:py-20 relative" style={{ marginTop: '15px' }}>
+      <section className="py-8 relative" style={{ marginTop: '15px' }}>
         <div className="blur-sheet rounded-3xl mx-4 sm:mx-6 lg:mx-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -52,7 +52,7 @@ const Events: React.FC = () => {
       </section>
 
       {/* Events List */}
-      <section className="py-4" style={{ marginTop: '15px' }}>
+      <section className="py-4" style={{ marginTop: '8px' }}>
         <div className="blur-sheet rounded-3xl mx-4 sm:mx-6 lg:mx-8">
           <motion.div
             initial="hidden"
