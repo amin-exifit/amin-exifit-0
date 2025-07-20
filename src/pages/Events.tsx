@@ -60,7 +60,7 @@ const Events: React.FC = () => {
               <span className="bg-gradient-to-r from-emerald-600 via-gray-800 to-purple-600 bg-clip-text text-transparent">
                 نقره‌ای
               </span>
-            </h1>
+            </motion.h1>
 
             <motion.div
               initial={{ opacity: 0, y: 20 }}
