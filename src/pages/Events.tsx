@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Calendar, Clock, MapPin, ExternalLink, Users, Sparkles } from 'lucide-react';
 import { events } from '../data/events';
@@ -162,13 +163,15 @@ const Events: React.FC = () => {
                 <p className="text-gray-700 mb-8 leading-relaxed font-semibold text-lg">
                   برای اطلاع از جدیدترین رویدادها و برنامه‌های آموزشی، در خبرنامه ما عضو شوید
                 </p>
-                <motion.button
-                  whileHover={{ scale: 1.05, y: -3 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="bg-gradient-to-r from-purple-500 to-emerald-500 hover:from-purple-600 hover:to-emerald-600 text-white px-10 py-4 rounded-2xl font-black text-lg transition-all duration-200"
-                >
-                  عضویت در خبرنامه
-                </motion.button>
+                <Link to="/contact">
+                  <motion.button
+                    whileHover={{ scale: 1.05, y: -3 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="bg-gradient-to-r from-purple-500 to-emerald-500 hover:from-purple-600 hover:to-emerald-600 text-white px-10 py-4 rounded-2xl font-black text-lg transition-all duration-200"
+                  >
+                    عضویت در خبرنامه
+                  </motion.button>
+                </Link>
               </div>
             </motion.div>
           </motion.div>
