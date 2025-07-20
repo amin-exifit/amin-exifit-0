@@ -70,7 +70,7 @@ const Header: React.FC = () => {
               whileTap={{ scale: 0.95 }}
               transition={{ duration: 0.1 }}
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="md:hidden p-2 rounded-2xl bg-white/20 backdrop-blur-xl hover:bg-white/30 transition-all duration-200 flex-shrink-0"
+              className="md:hidden p-2 rounded-2xl bg-white/20 backdrop-blur-xl hover:bg-white/30 transition-all duration-200 flex-shrink-0 flex items-center justify-center"
             >
               {isMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </motion.button>
@@ -86,7 +86,7 @@ const Header: React.FC = () => {
                 transition={{ duration: 0.2 }}
                 className="md:hidden bg-white/20 backdrop-blur-xl rounded-2xl mt-2 overflow-hidden shadow-2xl"
               >
-                <div className="py-2">
+                <div className="py-3">
                   {navItems.map((item, index) => (
                     <motion.div
                       key={item.path}

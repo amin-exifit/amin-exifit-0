@@ -8,7 +8,7 @@ const Events: React.FC = () => {
   const [selectedEvent, setSelectedEvent] = React.useState<number | null>(null);
 
   useEffect(() => {
-    document.title = 'رویدادها - مدیریت سلامت نقره‌ای';
+    document.title = 'مدیریت سلامت نقره‌ای';
   }, []);
 
   const containerVariants = {
@@ -35,18 +35,46 @@ const Events: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3 }}
-            className="relative z-10 container mx-auto px-8 sm:px-12 lg:px-16 py-8 text-center"
+            className="relative z-10 text-center px-6 sm:px-8 lg:px-12 py-8 lg:py-12"
           >
-            <div className="inline-flex items-center space-x-2 space-x-reverse bg-white/20 backdrop-blur-xl border border-white/30 rounded-full px-6 py-3 mb-8">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.3, delay: 0.2 }}
+              className="inline-flex items-center space-x-2 space-x-reverse bg-white/20 backdrop-blur-xl border border-white/30 rounded-full px-4 py-2 mb-6"
+            >
               <Sparkles className="w-5 h-5 text-purple-600" />
-              <span className="text-gray-800 font-black">رویدادهای علمی</span>
-            </div>
-            <h1 className="text-4xl lg:text-7xl font-black mb-6 text-gray-800">
-              رویدادهای آینده
+              <span className="text-gray-800 font-black">نوآوری در سلامت دیجیتال</span>
+            </motion.div>
+
+            <motion.h1
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3, delay: 0.3 }}
+              className="text-3xl sm:text-4xl lg:text-6xl font-black mb-6 leading-tight"
+            >
+              <span className="bg-gradient-to-r from-purple-600 via-gray-800 to-emerald-600 bg-clip-text text-transparent">
+                مدیریت سلامت
+              </span>
+              <br />
+              <span className="bg-gradient-to-r from-emerald-600 via-gray-800 to-purple-600 bg-clip-text text-transparent">
+                نقره‌ای
+              </span>
             </h1>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed font-semibold">
-              به برنامه‌های آموزشی و علمی ما بپیوندید
-            </p>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3, delay: 0.4 }}
+              className="mb-8"
+            >
+              <p className="text-xl sm:text-2xl lg:text-3xl font-black text-emerald-600 mb-4">
+                رویدادهای آینده
+              </p>
+              <p className="text-base sm:text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed font-semibold">
+                به برنامه‌های آموزشی و علمی ما بپیوندید
+              </p>
+            </motion.div>
           </motion.div>
         </div>
       </section>
