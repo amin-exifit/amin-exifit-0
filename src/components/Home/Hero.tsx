@@ -20,14 +20,14 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 pb-4" style={{ marginTop: '15px' }}>
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-4" style={{ marginTop: '15px' }}>
       {/* Hero Content */}
       <div className="blur-sheet rounded-3xl mx-4 sm:mx-6 lg:mx-8 max-w-5xl w-full relative">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0.1 }}
-          className="relative z-10 text-center px-6 sm:px-8 lg:px-12 py-12 lg:py-16 pb-20"
+          className="relative z-10 text-center px-6 sm:px-8 lg:px-12 py-8 lg:py-12"
         >
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}

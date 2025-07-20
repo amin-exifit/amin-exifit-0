@@ -30,13 +30,13 @@ const Products: React.FC = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="py-16 lg:py-20 relative" style={{ marginTop: '15px' }}>
+      <section className="pt-16 lg:pt-20 pb-4 relative" style={{ marginTop: '15px' }}>
         <div className="blur-sheet rounded-3xl mx-4 sm:mx-6 lg:mx-8">
           <motion.div
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3 }}
-            className="relative z-10 container mx-auto px-8 sm:px-12 lg:px-16 py-12 text-center"
+            className="relative z-10 container mx-auto px-8 sm:px-12 lg:px-16 py-8 text-center"
           >
             <div className="inline-flex items-center space-x-2 space-x-reverse bg-white/20 backdrop-blur-xl border border-white/30 rounded-full px-6 py-3 mb-8">
               <Sparkles className="w-5 h-5 text-purple-600" />
